@@ -6,17 +6,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ad.cfp.edutrackand.R
+import ad.cfp.edutrackand.databinding.FragmentActivitatsBinding
 
 
 class ActivitatsFragment : Fragment() {
 
-    private var _binding:
+    private var _binding: FragmentActivitatsBinding? = null
+    private var binding = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_activitats, container, false)
+        _binding = FragmentActivitatsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
