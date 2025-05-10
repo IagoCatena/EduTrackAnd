@@ -9,6 +9,9 @@ import ad.cfp.edutrackand.R
 
 
 class ActivitatsFragment : Fragment() {
+
+    private var _binding:
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
