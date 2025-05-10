@@ -8,6 +8,7 @@ android {
     namespace = "ad.cfp.edutrackand"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "ad.cfp.edutrackand"
         minSdk = 28
