@@ -5,6 +5,10 @@ plugins {
 }
 
 android {
+    viewBinding {
+        enable = true
+    }
+
     namespace = "ad.cfp.edutrackand"
     compileSdk = 35
 
