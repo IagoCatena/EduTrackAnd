@@ -8,6 +8,10 @@ android {
     compileSdk = 35
 
     defaultConfig {
+        viewBinding {
+            enable = true
+        }
+
         applicationId = "ad.cfp.edutrackand"
         minSdk = 28
         targetSdk = 35
